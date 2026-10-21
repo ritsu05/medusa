@@ -1,0 +1,14 @@
+{
+  "name": "my-ecommerce-store",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "backend",
+    "storefront"
+  ],
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix storefront",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:storefront": "npm run dev --prefix storefront"
+  }
+}
